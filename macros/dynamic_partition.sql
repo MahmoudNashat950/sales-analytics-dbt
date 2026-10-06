@@ -3,7 +3,7 @@
     CASE
         WHEN DATE({{ col_name }}) >= DATE_SUB(
             CURRENT_DATE(),
-            INTERVAL 3 {{ interval }} 
+            INTERVAL 2 {{ interval }} 
         )
         THEN 'recent'
 
